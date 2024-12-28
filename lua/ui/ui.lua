@@ -10,6 +10,7 @@ local M = {
       "%=",
       "lsp_msg",
       "%=",
+      "diagnostics",
       "lsp",
       "cursor",
       "cwd",

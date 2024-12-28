@@ -11,7 +11,8 @@ local options = {
     typescript = { "prettierd" },
     typescriptreact = { "prettierd" },
 
-    sh = { "shfmt" },
+    -- sh = { "shfmt" },
+    zsh = { "beautysh" },
 
     -- Conform will run multiple formatters sequentially
     python = { "black" },

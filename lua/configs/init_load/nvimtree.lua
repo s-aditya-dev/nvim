@@ -6,7 +6,7 @@ end
 nvimtree.setup({
   filters = {
     custom = {}, -- Ensure no custom patterns are set to hide files
-    exclude = { ".env" }, -- Optionally, explicitly include `.env`
+    exclude = { ".env", "node_modules" }, -- Optionally, explicitly include `.env`
   },
   disable_netrw = true,
   hijack_netrw = true,
@@ -25,7 +25,7 @@ nvimtree.setup({
   },
   git = {
     enable = true,
-    ignore = true,
+    ignore = false,
   },
   filesystem_watchers = {
     enable = true,

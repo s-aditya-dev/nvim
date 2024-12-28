@@ -1,4 +1,9 @@
 {
+  "consoleLog": {
+    "prefix": "cl",
+    "body": ["console.log('$1');"],
+    "description": "Log a message to the console"
+  },
   "reactFunctionalComponent": {
     "prefix": "rfc",
     "body": [
@@ -35,36 +40,22 @@
   },
   "reactState": {
     "prefix": "usestate",
-    "body": [
-      "const [$1, set$1] = useState<$2>($3);"
-    ],
+    "body": ["const [$1, set$1] = useState<$2>($3);"],
     "description": "React useState hook with TypeScript"
   },
   "reactEffect": {
     "prefix": "useeffect",
-    "body": [
-      "useEffect(() => {",
-      "  $1",
-      "}, [$2]);"
-    ],
+    "body": ["useEffect(() => {", "  $1", "}, [$2]);"],
     "description": "React useEffect hook"
   },
   "reactFragment": {
     "prefix": "fragment",
-    "body": [
-      "<React.Fragment>",
-      "  $1",
-      "</React.Fragment>"
-    ],
+    "body": ["<React.Fragment>", "  $1", "</React.Fragment>"],
     "description": "React Fragment"
   },
   "reactFragmentShort": {
     "prefix": "frag",
-    "body": [
-      "<>",
-      "  $1",
-      "</>"
-    ],
+    "body": ["<>", "  $1", "</>"],
     "description": "React shorthand Fragment"
   }
 }

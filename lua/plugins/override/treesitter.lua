@@ -20,6 +20,8 @@ local M = {
         "tsx",
         "css",
         "python",
+        "rasi",
+        "yuck",
       },
 
       highlight = {

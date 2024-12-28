@@ -29,6 +29,7 @@ lspconfig.servers = {
   "jsonls",
   "lua_ls",
   "ts_ls",
+  "emmet_ls",
   "pyright",
   "sqlls",
 }
@@ -38,8 +39,11 @@ local default_servers = {
   eslint = {
     "javascript",
     "javascriptreact",
-    -- "typescript",
-    -- "typescriptreact",
+    "typescript",
+    "typescriptreact",
+  },
+  emmet_ls = {
+    "html",
   },
   tailwindcss = {
     "html",
@@ -88,10 +92,9 @@ setup_server_with_ft("lua_ls", { "lua" }, {
 -- TypeScript-specific config
 local function ts_organize_imports()
   local params = {
-    command = "_typescript.organizeImports",
-    arguments = { vim.api.nvim_buf_get_name(0) },
+    context = { only = { "source.organizeImports" } },
   }
-  vim.lsp.buf.execute_command(params)
+  vim.lsp.buf.code_action(params)
 end
 
 setup_server_with_ft("ts_ls", { "typescript", "typescriptreact" }, {

@@ -1,13 +1,15 @@
 local highlights = require("ui.highlights")
 
+---@type Base46Config
+
 local M = {
   theme = "catppuccin",
   transparency = true,
-  theme_toggle = { -- Toggle themes
-    "tokyodark",
+  -- Toggle themes
+  theme_toggle = {
     "catppuccin",
+    "tokyonight",
   },
-  hl_add = highlights.add,
   hl_override = highlights.override,
 }
 
