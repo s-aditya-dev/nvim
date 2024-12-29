@@ -33,8 +33,8 @@ M.General = {
     ["<leader>rn"] = { "<cmd>set rnu!<CR>", "Toggle relative number" },
 
     --move line above and below
-    ["<A-k>"] = { ":m .-1<CR>==", "Move line up" },
-    ["<A-j>"] = { ":m .+2<CR>==", "Move line down" },
+    ["<A-j>"] = { ":m .+1<CR>==gi<Esc>", "Move line down" },
+    ["<A-k>"] = { ":m .-2<CR>==gi<Esc>", "Move line up" },
 
     --copy line above and below
     ["<C-S-k>"] = { "yyP", "Copy line above" },
@@ -329,14 +329,14 @@ M.LspConfig = {
 
     ["[d"] = {
       function()
-        vim.diagnostic.goto_prev({ float = { border = "rounded" } })
+        vim.diagnostic.jump({ count = -1, float = { border = "rounded" } })
       end,
       "Goto prev",
     },
 
     ["]d"] = {
       function()
-        vim.diagnostic.goto_next({ float = { border = "rounded" } })
+        vim.diagnostic.jump({ count = 1, float = { border = "rounded" } })
       end,
       "Goto next",
     },
