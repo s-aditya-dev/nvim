@@ -92,9 +92,16 @@ setup_server_with_ft("lua_ls", { "lua" }, {
 -- TypeScript-specific config
 local function ts_organize_imports()
   local params = {
-    context = { only = { "source.organizeImports" } },
+    command = "_typescript.organizeImports",
+    arguments = { vim.fn.expand("%:p") },
   }
-  vim.lsp.buf.code_action(params)
+  local result =
+    vim.lsp.buf_request_sync(0, "workspace/executeCommand", params, 1000)
+  if result then
+    vim.notify("Organized imports successfully", vim.log.levels.INFO)
+  else
+    vim.notify("Failed to organize imports", vim.log.levels.ERROR)
+  end
 end
 
 setup_server_with_ft("ts_ls", { "typescript", "typescriptreact" }, {
