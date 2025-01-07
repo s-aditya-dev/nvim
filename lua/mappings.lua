@@ -40,12 +40,6 @@ M.General = {
     ["<C-S-k>"] = { "yyP", "Copy line above" },
     ["<C-S-j>"] = { "yyp", "Copy line below" },
 
-    -- Markdown toggle
-    ["<leader>md"] = {
-      "<cmd>lua require('render-markdown').toggle()<CR>",
-      "Markdown toggle",
-    },
-
     --Timer
     ["<leader>tm"] = { "<cmd>TimerlyToggle<CR>", "Toggle timer" },
 
