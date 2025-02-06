@@ -1,7 +1,14 @@
-<h1 align="center">My Neovim Configuration</h1>
+<h1 align="center">🌟 My Neovim Configuration 🌟</h1>
 
-This is my custom Neovim configuration based on [NvChad](https://nvchad.com/). It provides a modern and efficient
+This is my custom Neovim configuration based on [NvChad 2.5](https://nvchad.com/). It provides a modern and efficient
 development environment with additional plugins and tweaks.
+
+## Showcase
+![Screenshot-1](./assets/screenshot-1.png)
+![Screenshot-2](./assets/screenshot-2.png)
+![Screenshot-3](./assets/screenshot-3.png)
+
+- To see more features visit [NvChad/features](https://nvchad.com/docs/features) 
 
 ## Requirements
 
@@ -35,7 +42,7 @@ rm -rf ~/.local/share/nvim
 
 2. Clone NvChad into your Neovim configuration directory:
 ```sh
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+git https://github.com/s-adi-dev/nvim.git ~/.config/nvim --depth 1
 ```
 
 3. Start Neovim and let it install the plugins:
@@ -55,7 +62,6 @@ nvim
 - Press `<Space>` to open which key menu.
 - Press `<Space>ch` to open cheatsheet.
 
-    ## Additional Configuration
 
-    If you need to further customize the setup, refer to NvChad's documentation: [NvChad
-    Docs](https://nvchad.com/docs/).
+## Additional Configuration
+For additional customization options, refer to the official NvChad Documentation: [NvChad Docs](https://nvchad.com/docs/) as well as my personal configuration [docs](./docs.md).
