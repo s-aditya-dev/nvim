@@ -1,7 +1,7 @@
 {
   "consoleLog": {
     "prefix": "cl",
-    "body": ["console.log('$1');"],
+    "body": ["console.log($1);"],
     "description": "Log a message to the console"
   },
   "reactFunctionalComponent": {

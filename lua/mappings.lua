@@ -323,14 +323,14 @@ M.LspConfig = {
 
     ["[d"] = {
       function()
-        vim.diagnostic.jump({ count = -1, float = { border = "rounded" } })
+        vim.diagnostic.goto_prev({ float = { border = "rounded" } })
       end,
       "Goto prev",
     },
 
     ["]d"] = {
       function()
-        vim.diagnostic.jump({ count = 1, float = { border = "rounded" } })
+        vim.diagnostic.goto_next({ float = { border = "rounded" } })
       end,
       "Goto next",
     },

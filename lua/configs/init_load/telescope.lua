@@ -21,5 +21,11 @@ telescope.setup({
   },
 
   extensions_list = { "themes", "terms" },
-  extensions = {},
+  extensions = {
+    ["ui-select"] = {
+      require("telescope.themes").get_dropdown({}),
+    },
+  },
 })
+
+require("telescope").load_extension("ui-select")
