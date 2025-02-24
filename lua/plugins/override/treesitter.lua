@@ -22,6 +22,7 @@ local M = {
         "python",
         "rasi",
         "yuck",
+        "http",
       },
 
       highlight = {

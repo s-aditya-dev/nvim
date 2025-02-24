@@ -25,3 +25,23 @@ map("n", "<leader>/", "gcc", { desc = "toggle comment", remap = true })
 map("n", "<C-/>", "gbc", { desc = "toggle comment", remap = true })
 map("v", "<leader>/", "gc", { desc = "toggle comment", remap = true })
 map("v", "<C-/>", "gb", { desc = "toggle comment", remap = true })
+
+-- Rest
+vim.api.nvim_set_keymap(
+  "n",
+  "<leader>rr",
+  "<cmd>Rest run<CR>",
+  { noremap = true, silent = true }
+)
+vim.api.nvim_set_keymap(
+  "n",
+  "<leader>rl",
+  "<cmd>Rest last<CR>",
+  { noremap = true, silent = true }
+)
+vim.api.nvim_set_keymap(
+  "n",
+  "<leader>rp",
+  "<cmd>Rest run true<CR>",
+  { noremap = true, silent = true }
+)

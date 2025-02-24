@@ -32,8 +32,9 @@ require("lazy").setup({
   { import = "plugins" },
 }, lazy_config)
 
+-- load mappings and other configs
+require("configs.utils").load_config()
+
 -- load theme
 dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")
-
-require("configs.utils").load_config()
