@@ -8,7 +8,7 @@ local M = {
   -- Toggle themes
   theme_toggle = {
     "catppuccin",
-    "tokyonight",
+    "chadwal",
   },
   hl_override = highlights.override,
 }
